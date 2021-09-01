@@ -20,8 +20,8 @@
 </head>
 
 <body>
-    <header class="jumbotron jumbotron-fluid" >
-       
+    <header class="jumbotron jumbotron-fluid">
+
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
@@ -38,7 +38,7 @@
                 </a>
             </div>
         </div>
-        
+
     </header>
     <nav class=" navbar navbar-expand-md navbar-dark sticky-top">
         <div class="container">
@@ -117,13 +117,13 @@
         </div>
 
         <div class="row row-content">
-            <div class="col-sm-6 mx-auto">
-            <div class="card">
-                <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
-                <div class="card-body">
-                    <form class="form-group col-form-label form-control" id="reservForm">
-                        <div class="row">
-                            <label for="numCampers">Number of Campers</label>
+            <div class="col col-sm-6 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                    <div class="card-body">
+                        <form class="col" id="reservForm">
+                            <div class="row mb-3">
+                                <label for="numCampers">Number of Campers</label>
                                 <div class="col">
                                     <select name="numCampers" id="numCampers">
                                         <option value="0">Select....</option>
@@ -135,26 +135,28 @@
                                         <option value="6">6</option>
                                     </select>
                                 </div>
-                        </div>
-                        <div class="row">
-                                <div class="col"> 
-                                    <label for="date">Date</label>
-                                    <input type="date" id="date" name="date"> 
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label class="" for="date">Date</label>
+                                    <input type="date"  class="form-control" id="date" name="date">
                                 </div>
-                        </div> 
-                        <div class="row">
-                                <div class="col">
+                            </div>
+                            <div class="row">
+                                <div>
                                     <button type="button" class="btn btn-primary">Search</button>
                                 </div>
-                        </div>           
-                    </form>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>                  
-            </div>   
-        </div>          
-    </div>
+            </div>
+        </div>
+
 
     </div>
+
+
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -185,7 +187,6 @@
                             class="fa fa-envelope-o fa-lg text-primary"></i> campsites@nucamp.co</a>
                 </div>
             </div>
-
         </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
