@@ -48,50 +48,52 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="contaoner-fluid"></div>
+                    <div class="contaoner-fluid">
+                        <form>
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
+                                <div class="col">
+                                    <select name="numCampers" id="numCampers" class="form-control">
+                                        <option selected>Select...</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- Date select modal-->
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label" for="date">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                            </div>
+                            <!-- Reserve campsite modal -->
+                            <div>
+                                <label class="col-sm-6 col-form-label">Campsite Type</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="button">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked>
+                                        Tent
+                                    </label>
+                                    <label class="btn btn-primary">
+                                        <input type="radio" name="siteType" id="siteRv" autocomplete="off"> RV
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Serch Button -->
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="cancel" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <form>
-                    <div class="form-group row">
-                        <label class="col-sm-6 col-form-label" for="numCampers">Number of Campers</label>
-                        <div class="col">
-                            <select name="numCampers" id="numCampers" class="form-control">
-                                <option selected>Select...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                            </select>
-                        </div>
-                    </div>
-                    <!-- Date select modal-->
-                    <div class="form-group row">
-                        <label class="col-sm-6 col-form-label" for="date">Date</label>
-                        <div class="col">
-                            <input type="date" class="form-control" id="date" name="date" placeholder="Date">
-                        </div>
-                    </div>
-                    <!-- Reserve campsite modal -->
-                    <div>
-                        <label class="col-sm-6 col-form-label">Campsite Type</label>
-                        <div class="col-2 btn-group btn-group-toggle" data-toggle="button">
-                            <label class="btn btn-success active">
-                                <input type="radio" name="siteType" id="siteTent" autocomplete="off" checked> Tent
-                            </label>
-                            <label class="btn btn-primary">
-                                <input type="radio" name="siteType" id="siteRv" autocomplete="off"> RV
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Serch Button -->
-                    <div class="form-group row">
-                        <div class="col">
-                            <button type="cancel" class="btn btn-primary">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Search</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
